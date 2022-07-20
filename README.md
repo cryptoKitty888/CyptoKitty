@@ -1,17 +1,19 @@
 # crypto-kitties
+
 A Crypto Kitties clone. For fun... and maybe food for the Crypto Zombies tutorial! Mwuahahah!
 
-Hosted on Netlify: https://mayjer-academy-kitties.netlify.app/
+Hosted on Netlify: https://bespoke-salmiakki-09ba76.netlify.app/
 
 Original project, check them out!<br>
 https://www.cryptokitties.co/
 
 ### Contracts
-Deployed on Ropsten
 
-Kitties: https://ropsten.etherscan.io/address/0xd4bcc3f1c483ea10fdb97523357ca660e6b3c71e
+Deployed on Anvil
 
-Marketplace: https://ropsten.etherscan.io/address/0xa67e70910341ddf96537f005280a4417b5b29578
+Kitties: 0x28B1E3f8728C374e78f25c24aD05eb01a4c6616a
+
+Marketplace: 0x550770EB57bE4f8bA2d89D0A5923Df847642336D
 
 ### Tech Stack
 
@@ -37,18 +39,18 @@ Testing: mocha, chai, truffle-assertions
 
 The DNA structure is a 16 digit number with the following breakdown. The Kitten DNA is a random combination of the parent DNA with a chance for a completely random value.
 
-| DNA Digits | Cattribute | Values |
-|---|---|---|
-|00-01 | Body Color | 10-99 |
-|02-03 | Accent Color | 10-99 |
-|04-05 | Eye Color | 10-99 |
-|06-07 | Ear Color | 10-99 |
-| 08 | Eye Shape | 0-7 |
-| 09 | Pattern | 0-3 |
-| 10-11 | Pattern Color|  10-99 |
-| 12-13 | Pattern Accent Color | 10-99 |
-| 14 | Animation | 0-4 |
-| 15 | Mysterious | 0-7 |
+| DNA Digits | Cattribute           | Values |
+| ---------- | -------------------- | ------ |
+| 00-01      | Body Color           | 10-99  |
+| 02-03      | Accent Color         | 10-99  |
+| 04-05      | Eye Color            | 10-99  |
+| 06-07      | Ear Color            | 10-99  |
+| 08         | Eye Shape            | 0-7    |
+| 09         | Pattern              | 0-3    |
+| 10-11      | Pattern Color        | 10-99  |
+| 12-13      | Pattern Accent Color | 10-99  |
+| 14         | Animation            | 0-4    |
+| 15         | Mysterious           | 0-7    |
 
 ### Cooldown
 
@@ -56,22 +58,22 @@ When parent kitties breed they need time to rest before breeding again. Breed co
 
 https://guide.cryptokitties.co/guide/cat-features/cooldown-speed
 
-| Generation  | Cooldown Name  | Cooldown Time  |
-|---|---|---|
-| 0, 1 | fast  | 1 minute  |
-| 2, 3 | swift | 2 minutes |
-| 4, 5 | swift | 5 minutes |
-| 6, 7 | snappy | 10 minutes |
-| 8, 9 | snappy | 30 minutes |
-| 10, 11 | brisk | 1 hour |
-| 12, 13 | brisk | 2 hours |
-| 14, 15 | plodding | 4 hours |
-| 16, 17 | plodding | 8 hours |
-| 18, 19 | slow | 16 hours |
-| 20, 21 | slow | 24 hours |
-| 22, 23 | sluggish | 2 days |
-| 24, 25 | sluggish | 4 days |
-| 26+ | catatonic | 1 week |
+| Generation | Cooldown Name | Cooldown Time |
+| ---------- | ------------- | ------------- |
+| 0, 1       | fast          | 1 minute      |
+| 2, 3       | swift         | 2 minutes     |
+| 4, 5       | swift         | 5 minutes     |
+| 6, 7       | snappy        | 10 minutes    |
+| 8, 9       | snappy        | 30 minutes    |
+| 10, 11     | brisk         | 1 hour        |
+| 12, 13     | brisk         | 2 hours       |
+| 14, 15     | plodding      | 4 hours       |
+| 16, 17     | plodding      | 8 hours       |
+| 18, 19     | slow          | 16 hours      |
+| 20, 21     | slow          | 24 hours      |
+| 22, 23     | sluggish      | 2 days        |
+| 24, 25     | sluggish      | 4 days        |
+| 26+        | catatonic     | 1 week        |
 
 ## Running the project locally
 
@@ -98,6 +100,3 @@ INFURA_PROJECT_ID=
 ```
 
 Follow the local deployment instructions above except use `truffle console --network ropsten` (or your test network of choice).
-
-#### Bootcamp project template
-https://github.com/Ivan-on-Tech-Academy/academy-kitties-template/tree/master
